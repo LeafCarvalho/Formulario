@@ -9,21 +9,22 @@
 <body>
     <h1>Formulário para inscrição em curso online gratuito</h1>
     <h2>Informe seus dados nos próximos campos: </h2>
-    <p>Nome: <input type="text" name="nome" id="nome" placeholder="Nome Completo"></p>
-    <p>Nascimento: <input type="date" name="nascimento" id="nascimento" placeholder="Data de Nascimento"></p> 
-    <p>E-mail: <input type="email" name="email" id="email" placeholder="Informe E-mail"></p>
-    <p>Telefone: <input type="tel" name="telefone" id="telefone"></p>
-    <p>Cor: <select name="cor" id="cor">
-        <option value="branco">Branco</option>
-        <option value="pardo">Pardo</option>
-        <option value="negro">Negro</option>
-        <option value="indigena">Índigena</option>
-        <option value="outros">Outros</option>
-    </select></p>
-    <p>Sexo: <input type="radio" name="sexom" id="sexom">Masculino
-    <input type="radio" name="sexof" id="sexof">Feminino</p>
-
-    <input type="button" value="Prosseguir" onclick="prosseguir()">
+        <p>Nome: <input type="text" name="nome" id="nome" placeholder="Nome Completo"></p>
+        <p>Nascimento: <input type="date" name="nascimento" id="nascimento" placeholder="Data de Nascimento"></p>
+        <p>E-mail: <input type="email" name="email" id="email" placeholder="Informe E-mail"></p>
+        <p>Telefone: <input type="tel" name="telefone" id="telefone"></p>
+        <p>Cor: <select name="cor" id="cor">
+            <option value="branco">Branco</option>
+            <option value="pardo">Pardo</option>
+            <option value="negro">Negro</option>
+            <option value="indigena">Índigena</option>
+            <option value="outros">Outros</option>
+        </select></p>
+        <form>
+            Sexo: <input type="radio" name="sexom" value="masculino" checked>Masculino
+            <input type="radio" name="sexof" value="feminino">Feminino
+        </form>
+        <input type="button" value="Prosseguir" onclick="prosseguir()">
 </body>
 <script src="interacao.js"></script>
 </html>
