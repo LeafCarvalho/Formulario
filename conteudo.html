@@ -7,24 +7,25 @@
     <title>Formulário para inscrição em curso</title>
 </head>
 <body>
-    <h1>Formulário para inscrição em curso online gratuito</h1>
-    <h2>Informe seus dados nos próximos campos: </h2>
-        <p>Nome: <input type="text" name="nome" id="nome" placeholder="Nome Completo"></p>
-        <p>Nascimento: <input type="date" name="nascimento" id="nascimento" placeholder="Data de Nascimento"></p>
-        <p>E-mail: <input type="email" name="email" id="email" placeholder="Informe E-mail"></p>
-        <p>Telefone: <input type="tel" name="telefone" id="telefone"></p>
-        <p>Cor: <select name="cor" id="cor">
-            <option value="branco">Branco</option>
-            <option value="pardo">Pardo</option>
-            <option value="negro">Negro</option>
-            <option value="indigena">Índigena</option>
-            <option value="outros">Outros</option>
-        </select></p>
-        <form>
-            Sexo: <input type="radio" name="sexo" value="masculino" checked>Masculino <!--Manter sempre o mesmo 'name' para reconhecimento no BD-->
-            <input type="radio" name="sexo" value="feminino">Feminino
-        </form>
-        <input type="button" value="Prosseguir" onclick="prosseguir()">
+    <form>
+        <h1>Formulário</h1>
+        <h3>Informe seus dados nos próximos campos: </h3>
+            <p>Nome: <input type="text" name="nome" placeholder="Nome Completo" required></p>
+            <p>Nascimento: <input type="date" name="nascimento" placeholder="Data de Nascimento"></p>
+            <p>E-mail: <input type="email" name="email" placeholder="Informe E-mail" required></p>
+            <p>Telefone: <input type="tel" name="telefone" required></p>
+            <p>Cor: <select name="cor">
+                <option value="branco">Branco</option>
+                <option value="pardo">Pardo</option>
+                <option value="negro">Negro</option>
+                <option value="indigena">Índigena</option>
+                <option value="outros">Outros</option>
+            </select></p>
+                Sexo: <input type="radio" name="sexo" value="masculino" checked>Masculino <!--Manter sempre o mesmo 'name' para reconhecimento no BD-->
+                <input type="radio" name="sexo" value="feminino">Feminino
+                <br><br>
+            <input type="submit" value="Enviar">
+    </form>
 </body>
 <script src="interacao.js"></script>
 </html>
